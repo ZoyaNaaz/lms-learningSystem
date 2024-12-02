@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pageBg: '#1F232B', // Custom color named "pageBg"
+      },
+    },
   },
   plugins: [require("daisyui")],
 }
