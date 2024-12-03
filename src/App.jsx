@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Aboutus from "./pages/Aboutus";
 import Footer from "./components/Footer";
+import Notfound from "./pages/Notfound";
 
 function App() {
     
@@ -10,6 +11,7 @@ function App() {
          <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<Aboutus/>}/>
+            <Route path='*' element={<Notfound/>}/>
         </Routes>
     );
 }
